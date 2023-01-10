@@ -2,6 +2,12 @@
 
 The goal of this project is to showcase my HTML/CSS/JS abilities. 
 
+## Table of Contents
+1. [What it does](#what-it-does)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Credits](#credits)
+
 ## What it does
 This is a fictitious podcast website. It includes:
 * A beautiful homepage
@@ -13,12 +19,23 @@ I've also added functionality for liking and bookmarking episodes using *session
 
 ## Installation
 
+To run this project locally type in your git terminal:
 
-○ A table of contents to allow other people to quickly navigate
-especially long or detailed READMEs.
-○ An installation section that tells other users how to install your project
-locally.
-○ A usage section that instructs others on how to use your project after
-they’ve installed it. Include screenshots of your project in action.
-○ A section for credits that highlights and links to the authors of your
-project if the project has been created by more than one person.
+`git clone https://github.com/davidllopes/finalCapstone.git`
+
+You can use the VS Code plugin *Live Server* [VS Marketplace Link](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and preview it in your browser using localhost. 
+
+Example: `http://127.0.0.1:5500/index.html`
+
+## Usage
+
+You'll find a link to all episodes in the *hero* section of the homepage, as well as a link to the support us page. 
+
+The second section has an article that highlights one of the episodes with a link to Spotify. 
+
+There's a testimonials section with quotes from users and a button to the feedback page.
+
+## Credits
+
+* Design and development: David Lopes
+* Images from Unsplash.com - credit goes to their authors
