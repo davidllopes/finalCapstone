@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Podcast | All Episodes</title>
+        <!-- Plugins - FontAwesome - Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Unbounded:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/64d37988be.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Import stylesheet -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="./css/episodes.css" />
+    </head>
+    <body>
+        <!-- Hero section -->
+        <header id="hero">
+            <!-- Hero image -->
+            <img
+                src="../imgs/convertkit-tkXJoA_sn78-unsplash.jpg"
+                class="hero__img"
+                alt=""
+            />
+            <!-- Hero text -->
+            <div class="hero__text">
+                <a href="../" title="Back home" class="link"
+                    ><i class="fa-solid fa-house"></i> Home</a
+                >
+                <!-- Headings -->
+                <h2 class="heading heading--secondary">All episodes</h2>
+                <a href="./bookmarks.html"
+                    >My Bookmarks (<span class="bookmark-counter"></span>)</a
+                >
+                <!-- Short description -->
+                <p>Feel free to like and bookmark (save for later)</p>
+                <ul class="episode-list"></ul>
+            </div>
+        </header>
+        <main>
+            <section class="section testimonials">
+                <div class="section__container">
+                    <div class="container">
+                        <h2 class="heading heading-secondary">
+                            What our listeners say
+                        </h2>
+                        <div class="quotes__container"></div>
+                        <br />
+                        <h2 class="heading heading-secondary">
+                            Leave us a comment
+                        </h2>
+                        <form id="contact-form">
+                            <fieldset>
+                                <table class="table">
+                                    <tr>
+                                        <td width="33%">Your name</td>
+                                        <td colspan="2">
+                                            <input
+                                                name="fullname"
+                                                type="text"
+                                                class="input form-data"
+                                                placeholder="Name"
+                                                required="required"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Where can we reach you?</td>
+                                        <td colspan="2">
+                                            <input
+                                                name="email"
+                                                type="text"
+                                                class="input form-data"
+                                                placeholder="someone@email.io"
+                                                required="required"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>You want to</td>
+                                        <td>
+                                            <label for="type-fdbk"
+                                                ><input
+                                                    id="type-fdbk"
+                                                    type="radio"
+                                                    name="type"
+                                                    value="feedback"
+                                                    class="form-data"
+                                                />
+                                                Give feedback</label
+                                            >
+                                        </td>
+                                        <td>
+                                            <label for="type-qst"
+                                                ><input
+                                                    id="type-qst"
+                                                    type="radio"
+                                                    name="type"
+                                                    value="question"
+                                                    class="form-data"
+                                                />
+                                                Just ask a question</label
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <textarea
+                                                name="text"
+                                                id="fbk-text"
+                                                cols="auto"
+                                                rows="10"
+                                                class="form-data"
+                                                placeholder="What's your feedback/question for us?"
+                                                required="required"
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <input type="submit" class="btn" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container container--small">
+                <div class="site-map">
+                    <a href="../">Home</a> <br />
+                    <a href="./bookmarks.html">My Bookmarks</a><br />
+                    <a href="./we-hear-you.html">Give us feedback</a><br />
+                    <a href="./support-us.html">Become a patron</a>
+                </div>
+            </div>
+            <div class="container">
+                <p>&copy; 2022 David Lopes</p>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/feedback.js"></script>
+        <script src="js/episodes.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>

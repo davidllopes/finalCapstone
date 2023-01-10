@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Podcast | My Bookmarks</title>
+        <!-- Plugins - FontAwesome - Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Unbounded:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/64d37988be.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Import stylesheet -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="./css/episodes.css" />
+    </head>
+    <body>
+        <!-- Hero section -->
+        <header id="hero">
+            <!-- Hero image -->
+            <img
+                src="../imgs/soundtrap-c_S99FlDqSw-unsplash.jpg"
+                class="hero__img hero__img--flipped"
+                alt=""
+            />
+            <!-- Hero text -->
+            <div class="hero__text">
+                <a href="../" title="Back home" class="link"
+                    ><i class="fa-solid fa-house"></i> Home</a
+                >
+                <!-- Headings -->
+                <h2 class="heading heading--secondary">My Bookmarks</h2>
+                <!-- Short description -->
+                <p>Go to <a href="episodes.html">all episodes</a></p>
+                <p class="default-msg">Wow such empty. No bookmarks here.</p>
+                <ul class="episode-list bookmarks-only"></ul>
+            </div>
+        </header>
+
+        <footer class="footer">
+            <div class="container container--small">
+                <div class="site-map">
+                    <a href="../">Home</a> <br />
+                    <a href="./episodes.html">All episodes</a><br />
+                    <a href="./we-hear-you.html">Give us feedback</a><br />
+                    <a href="./support-us.html">Become a patron</a>
+                </div>
+            </div>
+            <div class="container">
+                <p>&copy; 2022 David Lopes</p>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="js/episodes.js"></script>
+    </body>
+</html>

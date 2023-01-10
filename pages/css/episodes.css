@@ -1,0 +1,53 @@
+.hero__text {
+    padding: 0 4rem;
+}
+
+ul.episode-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.episode-list .episodes__item {
+    display: flex;
+    gap: 1rem;
+}
+.episodes__item img {
+    border-radius: 0.5rem;
+    max-height: 100px;
+    object-fit: cover;
+    max-width: 200px;
+}
+.episodes__item .heading {
+    margin-top: 0.3rem;
+}
+.episodes__item .episodes__item__actions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*  medium screens and below */
+@media screen and (max-width: 1024px) {
+    header#hero {
+        background-color: transparent;
+        color: rgb(37, 41, 49);
+    }
+    #hero .link {
+        color: rgb(37, 41, 49);
+    }
+    .hero__img {
+        display: none;
+    }
+    .episode-list .episodes__item {
+        display: grid;
+        flex-direction: column;
+    }
+    .episodes__item .episodes__item__actions {
+        flex-direction: row;
+        grid-area: 2/1/2/2;
+    }
+}

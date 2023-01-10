@@ -1,0 +1,304 @@
+/* Reset default browser values for more control over layout */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    color: rgb(37, 41, 49);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section for the header */
+header#hero {
+    align-items: center;
+    background-color: rgb(238, 240, 245);
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+/* hero section for text - using the BEM methodology as in previous tasks */
+.hero__text {
+    padding: 0 8rem;
+    width: 60%;
+}
+/* Hero image will apear on the side */
+.hero__img {
+    align-self: stretch;
+    display: flex;
+    object-fit: cover;
+    width: 40%;
+}
+.hero__img--flipped {
+    transform: scaleX(-1);
+}
+
+/* Typography */
+.jumbo-title {
+    /* clamp sets a minimum, desired, and maximum values for the font size */
+    font-size: clamp(5rem, 15vmin, 20rem);
+}
+.heading {
+    font-family: "Unbounded", "Montserrat", sans-serif;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 1rem 0;
+}
+.heading--secondary {
+    font-size: clamp(2rem, 5vmin, 10rem);
+}
+.heading--icon {
+    color: #1dd1a1;
+    font-size: clamp(5rem, 15vmin, 20rem);
+    height: clamp(5rem, 15vmin, 20rem);
+    margin-bottom: 5rem;
+}
+/* Links and buttons*/
+a {
+    color: #2e86de;
+}
+button,
+input,
+textarea {
+    /* change font of input elements to match the body font */
+    font: inherit;
+}
+input[type="text"],
+textarea {
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    width: 100%;
+}
+fieldset {
+    /* reset the fieldset element */
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    background-color: transparent;
+    border: 3px solid #2e86de;
+    border-radius: 10rem;
+    color: #2e86de;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5rem 1.7rem;
+    text-align: center;
+    text-decoration: none;
+    /* forces text to stay in one line */
+    white-space: nowrap;
+}
+.btn.hero-CTA {
+    background-color: #2e86de;
+    border-color: 2e86de;
+    color: white;
+}
+.btn.hero-CTA--alt {
+    background-color: transparent;
+    border-color: #2e86de;
+    color: #2e86de;
+}
+.btn:hover,
+.btn.btn.hero-CTA--alt:hover {
+    background-color: #2e86de;
+    color: white;
+}
+.btn.hero-CTA:hover {
+    background-color: transparent;
+    border: 3px solid #2e86de;
+    color: #2e86de;
+}
+
+.btn--icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #2e86de;
+}
+.btn--icon:hover {
+    transform: scale(1.2);
+}
+
+/* Layouts */
+.container {
+    /* adds auto margins to the main body of the content */
+    margin: auto;
+    max-width: 1200px;
+    /* padding for smaller screens */
+    padding: 0 2rem;
+    width: 100%;
+}
+.container--center {
+    text-align: center;
+}
+.container--small {
+    /* smaller container to center the list */
+    max-width: 500px;
+}
+section.section {
+    padding-top: 10rem;
+}
+section.section .section__container {
+    /* center the content in the section vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
+.full-width {
+    width: 100%;
+}
+.full-width__img {
+    height: 70vh;
+    /* empty space fix */
+    margin-bottom: -7px;
+    /* use the image as a background and fill the area available, while centering horizontally and positioning vertically */
+    object-fit: cover;
+    object-position: 50% 15%;
+    width: 100%;
+}
+.full-width__img--middle {
+    /* positions the fill image in the center x, y */
+    object-position: 50% 50%;
+}
+
+footer.footer {
+    background-color: rgb(37, 41, 49);
+    color: white;
+    display: flex;
+    /* places the links on the right */
+    flex-direction: row-reverse;
+    padding: 5rem;
+}
+
+.footer a {
+    color: white;
+}
+
+/* Tables */
+
+table.table {
+    border-radius: 1rem;
+    border-spacing: 0;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.table .table__header {
+    font-size: larger;
+    font-weight: bold;
+}
+.table th,
+.table td {
+    background-color: white;
+    border-bottom: 1px solid rgb(238, 240, 245);
+    padding: 1rem;
+}
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Quotes  */
+.quotes__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.quotes__container .quote {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 33%;
+    font-style: italic;
+    padding: 2rem;
+}
+.quote blockquote {
+    margin: 0;
+}
+.quote .author {
+    margin-top: 1rem;
+    text-align: right;
+    width: 100%;
+}
+
+/* Feedback area */
+textarea#fbk-text {
+    width: 100%;
+}
+
+/*  smaller screens */
+@media screen and (max-width: 500px) {
+    .btn {
+        width: 100%;
+    }
+}
+/*  medium screens and below */
+@media screen and (max-width: 1024px) {
+    /* places content over the image and changes the text colour to white */
+    header#hero {
+        background-color: transparent;
+        color: white;
+    }
+    #hero .link {
+        color: white;
+    }
+    /* add shadow for contrast */
+    .hero__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        text-shadow: 0 1em 3em rgba(0, 0, 0, 0.3);
+        width: 100%;
+    }
+    .hero__text .btn.hero-CTA {
+        background-color: white;
+        color: #2e86de;
+    }
+    .hero__text .btn.hero-CTA--alt {
+        background-color: transparent;
+        border-color: white;
+        color: white;
+    }
+    .hero__img {
+        left: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .hero__text table.table {
+        color: rgb(37, 41, 49);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    .quotes__container {
+        flex-direction: column;
+    }
+
+    footer.footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*  medium screens only */
+@media screen and ((min-width: 501px) and (max-width: 1024px)) {
+    .quotes__container .quote {
+        background-color: rgb(238, 240, 245);
+        box-shadow: none;
+    }
+}
