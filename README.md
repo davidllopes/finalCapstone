@@ -31,9 +31,23 @@ Example: `http://127.0.0.1:5500/index.html`
 
 You'll find a link to all episodes in the *hero* section of the homepage, as well as a link to the support us page. 
 
+![Homepage](/project/project1.png) 
+
 The second section has an article that highlights one of the episodes with a link to Spotify. 
 
 There's a testimonials section with quotes from users and a button to the feedback page.
+
+The "All episodes" page lists all the episodes and has the functionality to like and bookmark episodes. Which will be tracked in the user's browser.
+
+![All episodes](/project/project3.png)
+
+It also has a comments section, which is connected to the testimonials.
+
+![Comments section](/project/project4.png)
+
+The webiste is mobile responsive too!
+
+![Homepage mobile](/project/project2.png)
 
 ## Credits
 
